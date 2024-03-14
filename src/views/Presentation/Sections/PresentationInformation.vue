@@ -39,7 +39,7 @@ onMounted(() => {
             />
 
             <RotatingCardBack
-              :image=vueBangkes
+              :image="vueBangkes"
               title="Discover More"
               description="You will save a lot of time going from prototyping to full-functional
                 code because all elements are implemented."
@@ -53,34 +53,33 @@ onMounted(() => {
           </RotatingCard>
         </div>
         <div class="col-lg-6 ms-auto">
-        <div class="row">
-          <div class="col text-center mx-auto position-relative">
-            <h1
-              class="text-white pt-3 mt-5 me-2"
-              :style="{ display: 'inline-block ' }"
-            >
-              Teguh Prasetyo
-            </h1>
-            <h1 class="text-white">
-              <span class="text-white" id="typed"></span>
-            </h1>
-            <div id="typed-strings">
-              <!-- <h1>Programmer</h1>
+          <div class="row">
+            <div class="col text-center mx-auto position-relative">
+              <h1
+                class="text-white pt-3 mt-5 me-2"
+                :style="{ display: 'inline-block ' }"
+              >
+                Teguh Prasetyo
+              </h1>
+              <h2 class="text-white">
+                <span class="text-white" id="typed"></span>
+              </h2>
+              <div id="typed-strings">
+                <!-- <h1>Programmer</h1>
               <h1>Engineer</h1>
               <h1>Infrastucture Engineer</h1> -->
-              <h1>Database Administrator</h1>
-              <h1>Data Engineering</h1>
-              <!-- <h1>Data Analyst</h1>
+                <h3>Database Administrator</h3>
+                <h3>Data Engineering</h3>
+                <!-- <h1>Data Analyst</h1>
               <h1>Data ETL</h1>
               <h1>Data Visualization</h1> -->
-              
-            </div>
-            <!-- <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
+              </div>
+              <!-- <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
               Start the Development With Bootstrap 5 Design System inspired by
               Material Design.
             </p> -->
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </div>

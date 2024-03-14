@@ -159,7 +159,7 @@ watch(
       <!-- <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation"> -->
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <RouterLink
               class="nav-link text-dark font-weight-bolder"
               to="#"
@@ -183,16 +183,9 @@ watch(
               v-scroll-to="'#contactUs'"
               >Contact Us</RouterLink
             >
-          </li>
+          </li> -->
         </ul>
         <ul class="nav navbar-nav">
-          <!-- <li class="nav-item">
-              <a
-                class="nav-link text-dark font-weight-bolder"
-                href="https://twitter.com/CreativeTim">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li> -->
           <li class="nav-item">
             <a
               class="nav-link text-dark font-weight-bolder mx-2"
