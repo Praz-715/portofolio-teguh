@@ -16,14 +16,14 @@ import imgSigninCover from "@/assets/img/signin-cover.png";
             > -->
             <h2 class="">Tentang Saya</h2>
             <p class="lead">
-              Proaktif, adaptable, dan kreatif dalam lingkungan organisasi yang sehat <br />
+              Pemikir sistematis yang terorganisir dengan perencanaan matang, fokus pada detail, dan mengikuti prosedur secara konsisten. Proaktif, adaptable, dan kreatif dalam lingkungan organisasi yang sehat, menjunjung tinggi integritas, kerja sama tim, serta berkomitmen pada peningkatan berkelanjutan. Lebih nyaman bekerja dengan instruksi standar dan perubahan yang terstruktur. <br />
               Melahap nilai-nilai integritas, kerjasama tim, dan komitmen pada peningkatan berkelanjutan
             </p>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="container mt-5">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-md-8">
           <div class="row mt-4">
@@ -75,6 +75,6 @@ import imgSigninCover from "@/assets/img/signin-cover.png";
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
   </section>
 </template>

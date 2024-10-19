@@ -57,9 +57,13 @@ export default {
             > -->
 
             <h2 class="text-dark mb-0">Tentang Saya</h2>
+            <h2 class="text-dark mb-0">About Me</h2>
             <p class="lead">
-              Proaktif, adaptable, dan kreatif dalam lingkungan organisasi yang sehat <br />
-              Melahap nilai-nilai integritas, kerjasama tim, dan komitmen pada peningkatan berkelanjutan
+              Pemikir sistematis yang terorganisir dengan perencanaan matang, fokus pada detail, dan mengikuti prosedur secara konsisten.
+              Proaktif, adaptable, dan kreatif dalam lingkungan organisasi yang sehat, menjunjung tinggi integritas, kerja sama tim, serta berkomitmen pada peningkatan berkelanjutan. Lebih nyaman bekerja dengan instruksi standar dan perubahan yang terstruktur. <br />
+            </p>
+            <p class="lead">
+              A systematic thinker with strong organizational skills, meticulous planning, and attention to detail, consistently following established procedures. Proactive, adaptable, and creative in a healthy organizational environment, upholding integrity, teamwork, and a commitment to continuous improvement. Prefers working with standard instructions and structured changes. <br />
             </p>
           </div>
         </div>

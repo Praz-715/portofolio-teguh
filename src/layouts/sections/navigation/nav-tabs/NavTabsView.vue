@@ -3,6 +3,10 @@ import { onMounted } from "vue";
 
 // Sections components
 import BaseLayout from "../../components/BaseLayout.vue";
+import ExampleCard from "../../../../views/Presentation/Components/ExampleCard.vue";
+
+// images
+import imgSigninCover from "@/assets/img/signin-cover.png";
 
 // Nav tabs page components
 
@@ -49,7 +53,43 @@ function ambilDataDariProps() {
     title="My Project"
     :breadcrumb="[{ label: 'Home', route: 'presentation' }, { label: id }]"
   >
-    <div
+    <section class="" id="tentang">
+      <div class="container">
+        <div class="row">
+          <div class="row text-center my-sm-5 mt-5">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="">{{ project.title }}</h2>
+              <p class="lead">
+                {{ project.subtitle }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-1">
+        <div class="row">
+          <div class="col-md-8">
+            <p>Pekerjaan</p>
+            <ul>
+              <li v-for="(task, index) in project.pekerjaan" :key="index">
+                {{ task }}
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mx-auto mt-md-0 mt-3">
+            <div class="position-sticky" style="top: 100px !important">
+              <img
+                :src="ambilDataDariProps().image"
+                id="gambar"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div
       class="position-relative border-radius-xl overflow-hidden shadow-lg mb-7"
     >
       <div class="container border-bottom">
@@ -84,11 +124,8 @@ function ambilDataDariProps() {
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <p>hello {{ id }} {{ project }}</p>
-    <!-- <View :title="ambilDataDariProps().title" id="tabs-simple">
-      <TabsSimple />
-    </View> -->
   </BaseLayout>
 </template>
 <style>
