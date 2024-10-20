@@ -129,12 +129,12 @@ watch(
             ? 'text-white'
             : 'font-weight-bolder ms-sm-3'
         "
-        to="/"
+        :to="{ name: 'presentation' }"
         rel="tooltip"
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Professional Landing
+      Om Guh DBA
       </RouterLink>
       <!-- <a
         href="https://www.creative-tim.com/product/vue-material-kit-pro"

@@ -153,6 +153,28 @@ const router = createRouter({
       component: ElTypography,
     },
   ],
+  // scrollBehavior(to, from, savedPosition) {
+  //   console.log('Navigating to:', to.path); // Debug
+  //   console.log('savedPosition', savedPosition); // Debug
+  //     return new Promise((resolve, reject) => {
+  //       setTimeout(() => {
+  //         resolve({ left: 0, top: 0 })
+  //       }, 500)
+  //     })
+  // }
+});
+
+
+// router.beforeEach((to, from, next) => {
+//   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+//   next();
+// });
+
+router.beforeEach((to, from, next) => {
+  next(); // Melanjutkan navigasi
+  setTimeout(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, 50); // Timeout untuk memastikan konten ter-render
 });
 
 export default router;

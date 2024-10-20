@@ -7,23 +7,23 @@ defineProps({
     default: () => [
       {
         icon: '<i class="fab fa-facebook text-lg opacity-8"></i>',
-        link: "https://www.facebook.com/CreativeTim/",
+        link: "https://www.facebook.com/th.teguh/",
       },
       {
         icon: '<i class="fab fa-twitter text-lg opacity-8"></i>',
-        link: "https://twitter.com/creativetim",
+        link: "https://twitter.com/",
       },
-      {
-        icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
-        link: "https://dribbble.com/creativetim",
-      },
+      // {
+      //   icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
+      //   link: "https://dribbble.com/creativetim",
+      // },
       {
         icon: '<i class="fab fa-github text-lg opacity-8"></i>',
-        link: "https://github.com/creativetimofficial",
+        link: "https://github.com/Praz-715",
       },
       {
         icon: '<i class="fab fa-youtube text-lg opacity-8"></i>',
-        link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+        link: "https://www.youtube.com/channel/om-guh",
       },
     ],
   },
@@ -49,7 +49,7 @@ defineProps({
   <footer class="footer py-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mb-4 mx-auto text-center">
+        <!-- <div class="col-lg-8 mb-4 mx-auto text-center">
           <a
             v-for="{ name, href } of links"
             :key="name"
@@ -59,7 +59,7 @@ defineProps({
           >
             {{ name }}
           </a>
-        </div>
+        </div> -->
         <div class="col-lg-8 mx-auto text-center mb-4 mt-2">
           <a
             v-for="{ icon, link } of socials"
@@ -75,7 +75,7 @@ defineProps({
       <div class="row">
         <div class="col-8 mx-auto text-center mt-1">
           <p class="mb-0 text-secondary">
-            Copyright © {{ new Date().getFullYear() }} Material by Creative Tim.
+            Copyright © {{ new Date().getFullYear() }} Teguh Prasetyo S.Kom OCP.
           </p>
         </div>
       </div>

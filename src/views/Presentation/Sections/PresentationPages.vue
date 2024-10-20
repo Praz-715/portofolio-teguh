@@ -6,7 +6,7 @@ import MaterialBadge from "../../../components/MaterialBadge.vue";
 import imgSigninCover from "@/assets/img/signin-cover.png";
 </script>
 <template>
-  <section class="py-5" id="tentang">
+  <section class="py-5" id="blog">
     <div class="container">
       <div class="row">
         <div class="row text-center my-sm-5 mt-5">
@@ -14,11 +14,11 @@ import imgSigninCover from "@/assets/img/signin-cover.png";
             <!-- <MaterialBadge color="success" class="mb-3"
               >Boost creativity</MaterialBadge
             > -->
-            <h2 class="">Tentang Saya</h2>
-            <p class="lead">
+            <h2 class="">My Documentaion</h2>
+            <!-- <p class="lead">
               Pemikir sistematis yang terorganisir dengan perencanaan matang, fokus pada detail, dan mengikuti prosedur secara konsisten. Proaktif, adaptable, dan kreatif dalam lingkungan organisasi yang sehat, menjunjung tinggi integritas, kerja sama tim, serta berkomitmen pada peningkatan berkelanjutan. Lebih nyaman bekerja dengan instruksi standar dan perubahan yang terstruktur. <br />
               Melahap nilai-nilai integritas, kerjasama tim, dan komitmen pada peningkatan berkelanjutan
-            </p>
+            </p> -->
           </div>
         </div>
       </div>

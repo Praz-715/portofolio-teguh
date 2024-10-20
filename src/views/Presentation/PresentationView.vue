@@ -6,6 +6,8 @@ import NavbarDefault from "../..//examples/navbars/NavbarDefault.vue";
 import DefaultFooter from "../../examples/footers/FooterDefault.vue";
 import Header from "../../examples/Header.vue";
 import FilledInfoCard from "../../examples/cards/infoCards/FilledInfoCard.vue";
+import CenteredFooter from "@/examples/footers/FooterCentered.vue";
+  
 
 //Vue Material Kit 2 components
 import MaterialSocialButton from "@/components/MaterialSocialButton.vue";
@@ -181,5 +183,6 @@ onUnmounted(() => {
     </div> -->
     <Contact />
   </div>
-  <DefaultFooter />
+  <CenteredFooter />
+  <!-- <DefaultFooter /> -->
 </template>
