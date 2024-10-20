@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory , createWebHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
@@ -24,7 +24,7 @@ import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressB
 import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
 import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
@@ -157,28 +157,14 @@ const router = createRouter({
       redirect: '/',
     },
   ],
-  // scrollBehavior(to, from, savedPosition) {
-  //   console.log('Navigating to:', to.path); // Debug
-  //   console.log('savedPosition', savedPosition); // Debug
-  //     return new Promise((resolve, reject) => {
-  //       setTimeout(() => {
-  //         resolve({ left: 0, top: 0 })
-  //       }, 500)
-  //     })
-  // }
 });
 
 
 // router.beforeEach((to, from, next) => {
-//   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-//   next();
+//   next(); // Melanjutkan navigasi
+//   setTimeout(() => {
+//     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+//   }, 50); // Timeout untuk memastikan konten ter-render
 // });
-
-router.beforeEach((to, from, next) => {
-  next(); // Melanjutkan navigasi
-  setTimeout(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-  }, 50); // Timeout untuk memastikan konten ter-render
-});
 
 export default router;
