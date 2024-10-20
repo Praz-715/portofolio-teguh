@@ -152,6 +152,10 @@ const router = createRouter({
       name: "el-typography",
       component: ElTypography,
     },
+    {
+      path: '/:pathMatch(.*)*', // Catch-all route
+      redirect: '/',
+    },
   ],
   // scrollBehavior(to, from, savedPosition) {
   //   console.log('Navigating to:', to.path); // Debug
