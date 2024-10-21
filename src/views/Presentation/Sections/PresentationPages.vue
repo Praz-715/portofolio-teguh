@@ -32,7 +32,7 @@ import imgSigninCover from "@/assets/img/signin-cover.png";
                 class="shadow-lg"
                 title="About Us Page"
                 image="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages/about-us.jpg"
-                route="about"
+                route="blog"
               />
             </div>
             <div class="col-md-6 mt-md-0 mt-5">

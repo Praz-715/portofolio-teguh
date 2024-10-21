@@ -23,6 +23,7 @@ import ElDropdowns from "../layouts/sections/elements/dropdowns/DropdownsView.vu
 import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressBarsView.vue";
 import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
 import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
+import BlogView from "@/views/Blog/BlogView.vue"
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
@@ -34,6 +35,18 @@ const router = createRouter({
     {
       path: "/myproject/:id",
       name: "myproject",
+      component: NavigationNavTabs,
+      props: true,
+    },
+    {
+      path: "/blog",
+      name: "blog",
+      component: BlogView,
+      props: true,
+    },
+    {
+      path: "/blog/:id",
+      name: "myblog",
       component: NavigationNavTabs,
       props: true,
     },
@@ -160,11 +173,11 @@ const router = createRouter({
 });
 
 
-// router.beforeEach((to, from, next) => {
-//   next(); // Melanjutkan navigasi
-//   setTimeout(() => {
-//     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-//   }, 50); // Timeout untuk memastikan konten ter-render
-// });
+router.beforeEach((to, from, next) => {
+  next(); // Melanjutkan navigasi
+  setTimeout(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, 50); // Timeout untuk memastikan konten ter-render
+});
 
 export default router;
